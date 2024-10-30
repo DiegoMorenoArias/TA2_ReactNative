@@ -1,5 +1,3 @@
-// index.jsx
-
 import { Image, StyleSheet, Text, View } from 'react-native';
 
 export default function HomeScreen() {
@@ -15,18 +13,18 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0d0007', // Fondo oscuro, casi negro
+    backgroundColor: '#0d0007',
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
     fontSize: 30,
-    color: '#ff0000', // Rojo intenso para el título
+    color: '#ff0000',
     fontWeight: 'bold',
   },
   subtitle: {
     fontSize: 18,
-    color: '#b32e2e', // Rojo oscuro para el subtítulo
+    color: '#b32e2e',
     marginTop: 10,
   },
   image: {
@@ -34,7 +32,7 @@ const styles = StyleSheet.create({
     height: 250,
     marginTop: 20,
     borderRadius: 125,
-    borderColor: '#ff0000', // Borde rojo
+    borderColor: '#ff0000',
     borderWidth: 3,
   },
 });

@@ -1,5 +1,3 @@
-// layout.jsx
-
 import { Tabs } from 'expo-router';
 import React from 'react';
 import { TabBarIcon } from '@/components/navigation/TabBarIcon';
@@ -13,7 +11,7 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        tabBarStyle: { backgroundColor: '#300a24' }, // Fondo oscuro, sangriento
+        tabBarStyle: { backgroundColor: '#300a24' },
         headerShown: false,
       }}>
       <Tabs.Screen

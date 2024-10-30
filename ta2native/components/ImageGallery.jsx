@@ -17,8 +17,8 @@ export default function ImageGallery() {
           <Text style={styles.description}>{item.description}</Text>
         </View>
       )}
-      horizontal // Cambia a horizontal si quieres una galería en fila
-      showsHorizontalScrollIndicator={false} // Opcional: oculta la barra de desplazamiento
+      horizontal
+      showsHorizontalScrollIndicator={false}
     />
   );
 }
@@ -27,22 +27,22 @@ const styles = StyleSheet.create({
   imageContainer: {
     marginVertical: 10,
     alignItems: 'center',
-    backgroundColor: '#2b0018', // Fondo oscuro en cada imagen
+    backgroundColor: '#2b0018',
     padding: 15,
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: '#ff4d4d', // Borde rojo oscuro
-    marginRight: 10, // Espacio entre imágenes
+    borderColor: '#ff4d4d',
+    marginRight: 10,
   },
   image: {
-    width: 120, // Ancho cuadrado
-    height: 120, // Alto cuadrado
-    borderRadius: 10, // Bordes redondeados
-    borderColor: '#ff0000', // Borde rojo sangriento
+    width: 120,
+    height: 120,
+    borderRadius: 10,
+    borderColor: '#ff0000',
     borderWidth: 2,
   },
   description: {
-    color: '#ff4d4d', // Texto sangriento
+    color: '#ff4d4d',
     marginTop: 5,
     fontSize: 16,
     textAlign: 'center',

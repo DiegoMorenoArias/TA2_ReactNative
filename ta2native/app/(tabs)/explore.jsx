@@ -1,12 +1,10 @@
 import { StyleSheet, Image, View, Text, Button } from 'react-native';
 import React, { useState } from 'react';
-import ImageGallery, { images } from '@/components/ImageGallery'; // Asegúrate de que la ruta sea correcta
+import ImageGallery, { images } from '@/components/ImageGallery';
 
 export default function ExploreScreen() {
-  // Estado para la imagen mostrada
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Función para cambiar la imagen
   const changeImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
@@ -25,14 +23,14 @@ export default function ExploreScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1b0012', // Fondo oscuro
+    backgroundColor: '#1b0012',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    padding: 20, // Agrega algo de espacio en el contenedor
+    padding: 20,
   },
   title: {
     fontSize: 24,
-    color: '#ff4d4d', // Color rojo sangriento
+    color: '#ff4d4d',
     fontWeight: 'bold',
     marginBottom: 20,
   },
@@ -41,12 +39,12 @@ const styles = StyleSheet.create({
     height: 300,
     borderRadius: 10,
     borderWidth: 2,
-    borderColor: '#ff4d4d', // Borde sangriento
+    borderColor: '#ff4d4d',
     marginBottom: 20,
   },
   description: {
     marginTop: 10,
-    color: '#b32e2e', // Texto de descripción en tonos oscuros
+    color: '#b32e2e',
     fontSize: 16,
     fontStyle: 'italic',
   },
